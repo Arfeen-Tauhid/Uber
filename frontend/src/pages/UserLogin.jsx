@@ -22,7 +22,7 @@ const UserLogin = () => {
       password: password
     }
 
-    const response = await axios.post(`http://localhost:8000/users/login`, userData)
+    const response = await axios.post(`http://localhost:7000/users/login`, userData)
 
     if (response.status === 200) {
       const data = response.data

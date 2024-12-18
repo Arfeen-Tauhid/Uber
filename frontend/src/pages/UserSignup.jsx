@@ -32,7 +32,7 @@ const UserSignup = () => {
       password: password
     }
 
-    const response = await axios.post(`http://localhost:8000/users/register`, newUser)
+    const response = await axios.post(`http://localhost:7000/users/register`, newUser)
 
     if (response.status === 201) {
       const data = response.data
